@@ -1,0 +1,22 @@
+body{
+    position: relative;
+    padding-bottom: 5em;
+    min-height: 120vh;
+}
+footer{
+    background-color: #212529;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.carousel {
+    margin: auto;
+    max-width: 600px; /* Ajustar el ancho máximo según sea necesario */
+  }
+
+  /* Reducir el tamaño de las imágenes */
+  .carousel-inner img {
+    width: 100%; /* Hacer que las imágenes ocupen el ancho completo del contenedor */
+    height: auto; /* Mantener la proporción original de la imagen */
+  }
