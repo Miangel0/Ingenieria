@@ -1,13 +1,15 @@
-const path = require('path')
+const path = require('path');
+const express = require('express');
+const app = express();
 
-const express = require('express')
+const publicPath = path.resolve(__dirname, 'public');
 
-const app = new express()
+app.use(express.static(publicPath));
 
-app.get('/', (req, res) =>{
-    res.sendFile(path.resolve(__dirname, 'views/index.html'))
-})
+app.get('/', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'views/index.html'));
+});
 
-app.listen(4000, () =>{
-    console.log('Aplicación corriendo en el puerto 4000')
-})
+app.listen(4000, () => {
+    console.log('Aplicación corriendo en el puerto 4000');
+});

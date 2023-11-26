@@ -1,19 +1,15 @@
 body{
     position: relative;
     padding-bottom: 5em;
-    min-height: 120vh;
+    min-height: 10vh;
 }
 footer{
-    background-color: #212529;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+  background-color: #212529;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
-.carousel {
-    margin: auto;
-    max-width: 600px; /* Ajustar el ancho máximo según sea necesario */
-  }
 
   /* Reducir el tamaño de las imágenes */
   .carousel-inner img {
